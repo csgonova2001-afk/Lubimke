@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Для подруги</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="title">Самой любимой Фаризе</div>
+  <div class="single">
+    <img src="photo/meow4.jpg" alt="">
+    <div class="photos">
+      Это самая прекрасная девочка.💕
+    </div>
+<div class="text-block">
+    Чего бы я тебе там ни наговорила, запомни: для Тебя я всегда буду подушкой для объятий и плечом для слёз, той, кто выслушает проблемы и недовольства, кто обсудит с Тобой любую тему и, если нужно, даст совет, кто поднимет настроение и сделает чай — такой, как Ты любишь, кто отведёт Тебя туда, где Тебе хорошо, и включит на фоне Твою любимую песню. И я готова уделить Тебе всё своё время, всю свою жизнь. Ты просто запомни: я — для Тебя Всегда. ❤️‍🩹
+  </div>
+  </div>
+  <div class="video">
+    <video src="photo/IMG_8784.MOV" controls>
+
+    </video>
+  </div>
+
+
+<div class="text-block">
+    Что бы между нами ни происходило и как бы мы ни ссорились, всё равно ты остаёшься ближе всех и единственной, кто сможет подобрать те слова, которые мне нужны. 💋
+  </div>
+  
+  
+  <div class="carousel-wrapper">
+    <button class="arrow left" onclick="prev()">←</button>
+
+    <div class="carousel" id="carousel">
+      
+      <img src="photo/meow1.jpg">
+      <img src="photo/meow10.jpg">
+      <img src="photo/meow2.jpg">
+      <img src="photo/meow3.jpg">
+      <img src="photo/meow11.jpg">
+      <img src="photo/meow7.jpg">
+      <img src="photo/meow8.jpg">
+      <img src="photo/meow9.jpg">
+      <img src="photo/meow5.jpg">
+      <img src="photo/meow6.jpg">
+    </div>
+
+    <button class="arrow right" onclick="next()">→</button>
+  </div>
+  <script>
+    const carousel = document.getElementById("carousel");
+    let scrollAmount = 0;
+
+    function next(){
+      scrollAmount += 300;
+      carousel.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth"
+      });
+    }
+
+    function prev(){
+      scrollAmount -= 300;
+      carousel.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth"
+      });
+    }
+  </script>
+<div class="text-block">
+   Люблю и ценю тебя,твоя чумазая. ❤️
+  </div>
+</body>
+</html>
